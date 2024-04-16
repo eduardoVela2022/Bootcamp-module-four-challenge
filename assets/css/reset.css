@@ -1,8 +1,21 @@
+/* Root Global CSS Variables */
+:root {
+  --border-color: #262626;
+  --website-title-color: #16a34a;
+  --website-background-color: #fafafa;
+  --website-text-color: #171717;
+  --focus-active-color: #a855f7;
+  --focus-inactive-color: #d4d4d4;
+  --button-color: #7e22ce;
+  --button-text-color: #f5f3ff;
+}
+
 /* Margin and padding is removed for all elements, and border box dox sizing is applied to them */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--website-text-color);
 }
 
 /* The html element is given all the height that is available in the user’s screen */
@@ -16,6 +29,7 @@ body {
   min-height: 100%;
   line-height: 1;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--website-background-color);
 }
 
 /* All header elements start with the default font size */
@@ -47,8 +61,13 @@ ul {
   list-style: none;
 }
 
-/* The anchor elements will not be underlined, and their text color is set to black */
+/* The anchor elements will not be underlined */
 a {
-  color: black;
   text-decoration: none;
+}
+
+/* Removes the default border and background color of the button */
+button {
+  border: none;
+  background-color: inherit;
 }
