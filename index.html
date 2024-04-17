@@ -25,25 +25,27 @@
 
       <!-- Post Form -->
       <section id="main-box-post-form">
-        <form id="post-form">
+        <form id="post-form" method="post">
           <h2>What's on your mind?</h2>
 
           <!-- Post Username -->
-          <label>Username:</label>
+          <label for="form-username">Username:</label>
           <input id="form-username" type="text" />
 
           <!-- Post Title -->
-          <label>Title:</label>
+          <label for="form-title">Title:</label>
           <input id="form-title" type="text" />
 
           <!-- Post Content -->
-          <label>Content:</label>
+          <label for="form-content">Content:</label>
           <textarea id="form-content"></textarea>
 
-          <button type="submit">Submit</button>
+          <button id="submitButton" type="submit">Submit</button>
         </form>
       </section>
     </main>
+
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
 
@@ -51,3 +53,4 @@
 <!-- https://www.toptal.com/designers/htmlarrows/ -->
 <!-- https://www.w3schools.com/css/css_form.asp -->
 <!-- https://www.w3schools.com/css/css3_transitions.asp -->
+<!-- https://www.w3schools.com/howto/howto_js_redirect_webpage.asp -->
