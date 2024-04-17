@@ -20,8 +20,8 @@ function loadPosts() {
   return JSON.parse(loadedPosts);
 }
 
-//Submit form
-submitButton.addEventListener("click", (event) => {
+// Handles the form data when the form is submitted
+function handleSubmit(event) {
   event.preventDefault();
 
   // Get form input fields' values
@@ -39,7 +39,7 @@ submitButton.addEventListener("click", (event) => {
   };
 
   // Add new post to posts array
-  posts.push(newPost);
+  posts.unshift(newPost);
 
   // Upload posts array to the local storage
   localStorage.setItem("posts", JSON.stringify(posts));
@@ -52,12 +52,16 @@ submitButton.addEventListener("click", (event) => {
   // Redirects the user to the blog.html page
   window.location.href =
     "file:///Users/eduardovela/CodeBootcamp/Bootcamp-module-four-challenge/blog.html";
-});
+}
 
-init();
+// Adding an event listener to the submit button of the form element
+submitButton.addEventListener("click", handleSubmit);
+
 // Init function
 function init() {
   // Loads saved posts
   posts = loadPosts();
-  console.log(posts);
 }
+
+// Executes init function
+init();
