@@ -11,12 +11,17 @@ For this project no installation is required. Just visit the site by clicking th
 ## Usage
 
 - To start using this project you will need to go to the project’s homepage, by clicking the following link: https://eduardovela2022.github.io/Bootcamp-module-four-challenge/
+  ![The website's homepage](./assets/images/Homepage.png)
 
--To upload a new post, you will need to fill out the form that appears in the website’s homepage. Then you will need to click on the form’s submit button to upload it.
+- To upload a new post, you will need to fill out the form that appears in the website’s homepage. Then you will need to click on the form’s submit button to upload it.
+  ![The website's homepage form with all its fields filled out](./assets/images/Form.png)
 
--Once you have uploaded a brand-new post, using the form found on the website’s homepage, you will be redirected to the blog page, were you will find all the other posts that were previously uploaded by you. To go back to the homepage, you can click on the back button that now appears in the website’s header.
+- Once you have uploaded a brand-new post, using the form found on the website’s homepage, you will be redirected to the blog page, were you will find all the other posts that were previously uploaded by you. To go back to the homepage, you can click on the back button that now appears in the website’s header.
+  ![The website’s blog page, were the new and the previous posts can be visualized](./assets/images/BlogPage.png)
 
--To toggle the website’s dark mode or light mode, just click on the sun or moon icon that appears on the website’s header, both on the homepage and the blog page.
+- To toggle the website’s dark mode or light mode, just click on the sun or moon icon that appears on the website’s header, both on the homepage and the blog page.
+  ![The website's homepage in light mode](./assets/images/Homepage.png)
+  ![The website's homepage in dark mode](./assets/images/HomepageDarkMode.png)
 
 ## Credits
 
