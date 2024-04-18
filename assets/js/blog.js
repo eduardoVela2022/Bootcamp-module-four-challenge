@@ -55,7 +55,7 @@ function createPosts() {
 // Redirects the user to the index.html page
 function handleGoBack() {
   window.location.href =
-    "file:///Users/eduardovela/CodeBootcamp/Bootcamp-module-four-challenge/index.html";
+    "https://eduardovela2022.github.io/Bootcamp-module-four-challenge/";
 }
 
 // Adding an event listener to the back button of the header
