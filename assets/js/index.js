@@ -3,7 +3,7 @@ const usernameInput = document.querySelector("#form-username");
 const titleInput = document.querySelector("#form-title");
 const contentInput = document.querySelector("#form-content");
 // Form submit button
-const submitButton = document.querySelector("#submitButton");
+const submitButton = document.querySelector("#submit-button");
 
 // Array that stores all the posts that are stored in the user's local storage
 let posts = [];
@@ -28,6 +28,14 @@ function handleSubmit(event) {
   const username = usernameInput.value;
   const title = titleInput.value;
   const content = contentInput.value;
+
+  // If one of the form's fields is empty, an early return is made
+  if (!usernameInput.value || !titleInput.value || !contentInput.value) {
+    alert(
+      "Please fill all the fields of the form, to submit your new blog post."
+    );
+    return;
+  }
 
   // [ No errors happened ]
 

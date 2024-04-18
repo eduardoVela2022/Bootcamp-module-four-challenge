@@ -4,9 +4,9 @@
   --website-title-color: #16a34a;
   --website-background-color: #fafafa;
   --website-text-color: #171717;
-  --focus-active-color: #a855f7;
-  --focus-inactive-color: #d4d4d4;
-  --button-color: #7e22ce;
+  --button-hover-color: #a855f7;
+  --inactive-color: #d4d4d4;
+  --purple-color: #7e22ce;
   --button-text-color: #f5f3ff;
 }
 
