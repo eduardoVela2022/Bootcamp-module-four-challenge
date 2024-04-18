@@ -59,7 +59,7 @@ function handleSubmit(event) {
 
   // Redirects the user to the blog.html page
   window.location.href =
-    "file:///Users/eduardovela/CodeBootcamp/Bootcamp-module-four-challenge/blog.html";
+    "https://eduardovela2022.github.io/Bootcamp-module-four-challenge/blog";
 }
 
 // Adding an event listener to the submit button of the form element

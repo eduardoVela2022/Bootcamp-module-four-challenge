@@ -24,7 +24,7 @@
   min-height: 100vh;
 }
 
-/* Main Box */
+/* Main Box Website Title */
 #main-box-website-title {
   display: flex;
   justify-content: center;
@@ -32,7 +32,7 @@
   margin: 2rem 0.5rem 1rem 1rem;
 }
 
-/* Main Box */
+/* Main Box Post Form*/
 #main-box-post-form {
   display: flex;
   justify-content: center;
@@ -63,6 +63,7 @@
 #post-form h2 {
   text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #post-form input {
@@ -109,4 +110,31 @@
 
 #post-form button:hover {
   background-color: var(--button-hover-color);
+}
+
+/* Aligns both the website title and the form in a column, so they can fit in smaller screens */
+@media screen and (max-width: 1050px) {
+  #main-index {
+    grid-template-columns: none;
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  #main-box-website-title {
+    margin: 1rem 1rem 0.5rem 1rem;
+  }
+
+  #main-box-post-form {
+    margin: 0.5rem 1rem 6rem 1rem;
+  }
+}
+
+/* Changes the font size of the website title and the form title, so they can fit in smaller screens */
+@media screen and (max-width: 750px) {
+  #website-title {
+    font-size: 1.5rem;
+  }
+
+  #post-form h2 {
+    font-size: 1.125rem;
+  }
 }

@@ -96,6 +96,7 @@
 
 #footer-box-blog h4 {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 #footer-box-blog p {
@@ -110,4 +111,27 @@
 #portfolio-link {
   outline-offset: 2px;
   outline-color: var(--purple-color);
+}
+
+/* Centers the footer’s paragraphs so they look better on smaller screens */
+@media screen and (max-width: 1000px) {
+  #footer-box-blog p {
+    text-align: center;
+  }
+}
+
+/* Aligns the items of the header in a column, changes the padding to use space better, and changes the font size of the footer’s header. */
+@media screen and (max-width: 600px) {
+  #header-box-blog {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #main-blog {
+    padding: 2rem 1.5rem;
+  }
+
+  #footer-box-blog h4 {
+    font-size: 0.875rem;
+  }
 }
