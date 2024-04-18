@@ -37,7 +37,7 @@ function createPosts() {
     postContent.textContent = post.content;
     // Post author
     const postAuthor = document.createElement("p");
-    postAuthor.textContent = post.username;
+    postAuthor.textContent = `Posted by: ${post.username}`;
 
     // The post content and author are appended to the post div
     postDiv.appendChild(postContent);
