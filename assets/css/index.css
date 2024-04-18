@@ -11,6 +11,12 @@
   cursor: pointer;
 }
 
+/* Dark Mode Button */
+#dark-mode-button {
+  outline-offset: 3px;
+  outline-color: var(--purple-color);
+}
+
 /* Main Index */
 #main-index {
   display: grid;
@@ -61,28 +67,30 @@
 
 #post-form input {
   border-radius: 15px;
-  border: 2px solid var(--focus-inactive-color);
+  border: 2px solid var(--inactive-color);
   padding: 10px;
   outline: none;
   transition: border 0.25s ease-in;
+  color: var(--field-text-color);
 }
 
 #post-form input:focus {
-  border: 2px solid var(--focus-active-color);
+  border: 2px solid var(--purple-color);
 }
 
 #post-form textarea {
   height: 6rem;
   border-radius: 15px;
-  border: 2px solid var(--focus-inactive-color);
+  border: 2px solid var(--inactive-color);
   padding: 10px;
   resize: none;
   outline: none;
   transition: border 0.25s ease-in;
+  color: var(--field-text-color);
 }
 
 #post-form textarea:focus {
-  border: 2px solid var(--focus-active-color);
+  border: 2px solid var(--purple-color);
 }
 
 #post-form button {
@@ -91,12 +99,14 @@
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
-  background-color: var(--button-color);
+  background-color: var(--purple-color);
   color: var(--button-text-color);
   cursor: pointer;
   transition: background-color 0.25s ease-in;
+  outline-offset: 3px;
+  outline-color: var(--purple-color);
 }
 
 #post-form button:hover {
-  background-color: var(--focus-active-color);
+  background-color: var(--button-hover-color);
 }
